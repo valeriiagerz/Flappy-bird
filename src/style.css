@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.game_container {
+  width: 500px;
+  height: 680px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 90px;
+  text-shadow: 2px 2px 2px;
+  color: rgb(82, 21, 21);
+}
+
+.sky {
+  width: 500px;
+  height: 580px;
+  position: absolute;
+  /* background-color: rgb(255, 0, 162); */
+  background-image: url('img/sky.png');
+}
+
+.ground {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 580px;
+  /* background-color: chocolate; */
+  background-image: url('img/lava.png');
+  z-index: +1;
+}
+
+.bird {
+  width: 57px;
+  height: 42px;
+  position: absolute;
+  background-image: url('img/perry.png');
+  /* border-radius: 40px; */
+}
+
+.bird:hover {
+  width: 500px;
+  height: 126px;
+}
+
+.obstacle {
+  /* background-color: green; */
+  width: 50px;
+  height: 300px;
+  position: absolute;
+  background-image: url('img/zombi.png');
+}
+
+.topObstacle {
+  /* background-color: green; */
+  transform: rotate(180deg);
+  width: 50px;
+  height: 300px;
+  position: absolute;
+  background-image: url('img/zombi.png');
+}
+
+.button {
+  outline: black solid 1px;
+  width: 200px;
+  padding: 0 20px;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+  color: rgb(54, 25, 25);
+  background-color: rgb(193, 87, 0);
+  box-shadow: 2px 2px 2px;
+  border-radius: 15px;
+  line-height: 30px;
+  transition: all 0.5s;
+  z-index: +2;
+  align-self: center;
+}
+
+.button:hover {
+  background-color: rgb(37, 37, 135);
+  box-shadow: 10px 10px 10px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-image: linear-gradient(green, rgb(23, 64, 84));
+  box-shadow: 5px 5px 5px;
+}
